@@ -4,7 +4,7 @@ const port = 3000;
 
 app.use((req, res, next) => {
     res.setHeader("Content-Security-Policy", "script-src 'unsafe-inline' 'nonce-12345'");
-    res.setHeader("X-Content-Security-Policy", "script-src 'unsafe-eval' 'nonce-12345'"); // IE11
+    res.setHeader("X-Content-Security-Policy", "script-src 'unsafe-inline' 'nonce-12345'"); // IE11
     return next();
   });
 
