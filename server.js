@@ -3,7 +3,7 @@ const app = express();
 const port = 3000;
 
 app.use((req, res, next) => {
-    res.setHeader("Content-Security-Policy", "script-src 'unsafe-inline' 'nonce-12345'");  
+    res.setHeader("Content-Security-Policy", "script-src 'nonce-12345'");  
     //res.setHeader("X-Content-Security-Policy", "script-src 'unsafe-inline' 'nonce-12345'"); -- You really don't want to support IE11
   
     //Set some other headers to make it production alike
