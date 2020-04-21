@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>CSP experiment</title>
+    </head>
+    <body>
+        Hello world from HTML!
+
+        <div id="main"></div>
+        <script src="./somescript.js" nonce="12345"></script>
+        <script src="./nononce.js"></script>
+        <script src="./evilscript.js" nonce="wrong-nonce"></script>
+        <script>alert('hello from an inline script')</script>
+    </body>
+</html>
